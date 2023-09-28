@@ -1,0 +1,26 @@
+{
+  "name": "google-books-api",
+  "version": "1.0.0",
+  "description": "recoding a google books API to be a GraphQL API built with an Apollo server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamionG22/google-books-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamionG22/google-books-api/issues"
+  },
+  "homepage": "https://github.com/DamionG22/google-books-api#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
